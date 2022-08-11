@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/SlsaMaskTree/R2020a">
+  <slsa.mm.maskTree.MaskTree type="slsa.mm.maskTree.MaskTree" uuid="5154af39-e53c-4ffe-a15b-9cd2e1251c67">
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="2cbcb7e1-7673-46e5-ab3b-1f4dfbb503ee">
+      <childrenIds>untitled:18</childrenIds>
+      <childrenIds>untitled:20</childrenIds>
+      <childrenIds>untitled:21</childrenIds>
+      <childrenIds>untitled:22</childrenIds>
+      <childrenIds>untitled:23</childrenIds>
+      <childrenIds>untitled:26</childrenIds>
+      <childrenIds>untitled:27</childrenIds>
+      <childrenIds>untitled:29</childrenIds>
+      <childrenIds>untitled:31</childrenIds>
+      <childrenIds>untitled:35</childrenIds>
+      <childrenIds>untitled:47</childrenIds>
+      <childrenIds>untitled:48</childrenIds>
+      <childrenIds>untitled:61</childrenIds>
+      <id>root</id>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="f8bb3dd5-e633-491c-8d63-9843cd5afdc7">
+      <blockPath>untitled/External Force and Torque</blockPath>
+      <id>untitled:18</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="91a86c52-71b6-4689-959d-98ac48d702ae">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ab611ff0-b804-4aaa-9ddc-77619da7a9e2">
+          <expression>ExternalForceTorque</expression>
+          <name>ClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="dc30f2dc-3c6d-4829-986b-6f6d0dac4d3f">
+          <expression>AttachedFrame</expression>
+          <name>ForceResolutionFrame</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7038781b-004c-494e-bb47-6f80b08826fc">
+          <expression>on</expression>
+          <name>EnableForceX</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6860e548-dce7-4174-a1ee-2a8e4c2f286f">
+          <expression>on</expression>
+          <name>EnableForceY</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e2f05d49-08f1-4bf7-8760-a4a63477ae58">
+          <expression>off</expression>
+          <name>EnableForceZ</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1c749fd1-cfbe-478b-b0b0-5dd6ae500536">
+          <expression>off</expression>
+          <name>EnableForce</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b7ef74eb-50d3-4391-aea4-10089e60e3f6">
+          <expression>AttachedFrame</expression>
+          <name>TorqueResolutionFrame</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f0929d60-5f12-4c63-bc66-36d64bf6ab23">
+          <expression>off</expression>
+          <name>EnableTorqueX</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6f6c600b-c62e-4256-a421-9425402d64f6">
+          <expression>off</expression>
+          <name>EnableTorqueY</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="eb6adb4b-479e-4cc0-ba39-0ff6d2a7a43c">
+          <expression>off</expression>
+          <name>EnableTorqueZ</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="95a66916-5031-4762-b90e-f41f0c32a0f2">
+          <expression>off</expression>
+          <name>EnableTorque</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c738085f-bc34-4d79-89d3-f1651a33a54d">
+          <expression>simmechanics.library.forces_torques.external_force_torque</expression>
+          <name>BlockFunction</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="f7cdb9b3-8182-4315-9798-cd654ab01a10">
+      <blockPath>untitled/Simulink-PS Converter</blockPath>
+      <childrenIds>untitled:20:2</childrenIds>
+      <id>untitled:20</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="2faab241-5c53-4208-b9c5-c5ce7b6ee290">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5232e639-e7c1-4c29-94bb-c23ce916cc72">
+          <expression>network_engine_domain</expression>
+          <name>PhysicalDomain</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e11cbfae-d263-4562-a960-435bc6f27d2a">
+          <expression>ps_input</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="54cf4358-348d-4d28-bb23-9727ed92a356">
+          <expression>input</expression>
+          <name>LeftPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d6156566-970b-43ca-be55-a638eab82838">
+          <expression>output</expression>
+          <name>RightPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="abb72d72-3660-40d9-926a-f2b483248264">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>PseudoPeriodic</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c47ba132-7b6a-4460-8652-50e19d9914df">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>Frequencies</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="80420b2b-9588-467f-b305-d31166bde112">
+          <expression>none</expression>
+          <name>NoiseDistribution</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2b7edaa0-1564-4c3c-9cbd-e66dc9063c3f">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>NoiseParameters</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="bb501449-ab74-4734-99ed-76f867d209e1">
+          <expression>N</expression>
+          <name>Unit</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="58abcf16-e902-4142-a5b8-24caef872428">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>AffineConversion</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5569f0dd-1299-4045-815d-1c0b4bee5790">
+          <expression>provide</expression>
+          <name>FilteringAndDerivatives</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="46a98add-3892-43b8-b033-4efd5cafd0f2">
+          <expression>1</expression>
+          <name>SimscapeFilterOrder</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="70eb6f66-8f7c-4d0e-a813-9dcdb74ff0c2">
+          <evaluate>true</evaluate>
+          <expression>0.001</expression>
+          <name>InputFilterTimeConstant</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8c504661-964a-4e03-bb48-7cec8eddf9b7">
+          <expression>0</expression>
+          <name>UdotUserProvided</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="d21808a3-c9d3-4e51-979b-24d3f63ceba6">
+      <blockPath>untitled/Simulink-PS Converter/EVAL_KEY</blockPath>
+      <id>untitled:20:2</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="064be99c-6eaa-4364-9b72-667ce59127a1">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7213186b-e72d-4b12-b6a4-83e732bc5d3f">
+          <expression>eval_key</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>untitled:20</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="8e561902-4f19-4494-9120-23f337b04957">
+      <blockPath>untitled/Brick Solid1</blockPath>
+      <id>untitled:21</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="ac9a61d4-4cf7-43cc-8baa-0020c93dc3a5">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="88053a36-2211-4d70-a9b6-6c29f32d7c7d">
+          <evaluate>true</evaluate>
+          <expression>[0.15 0.15 0.15 1.0]</expression>
+          <isTunable>true</isTunable>
+          <name>GraphicAmbientColor</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="89a142d2-d0e1-473b-930e-64707931a0bc">
+          <expression>compiletime</expression>
+          <name>GraphicAmbientColor_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="53958bea-7588-4ab2-9c6a-4b7cf714a647">
+          <expression>Mass</expression>
+          <name>BasedOnType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1f68bb58-b5e5-487e-9ee2-a540f64b9e25">
+          <evaluate>true</evaluate>
+          <expression>[6 12 1]</expression>
+          <isTunable>true</isTunable>
+          <name>BrickDimensions</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="78a8b715-2fd2-478d-9349-44cc26e7aebf">
+          <expression>cm</expression>
+          <name>BrickDimensionUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="264ddeef-ce3a-4549-9313-b1094bc44f34">
+          <expression>compiletime</expression>
+          <name>BrickDimensions_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4d8bb423-ffb4-4837-8ebe-c7721e3c89b0">
+          <evaluate>true</evaluate>
+          <expression>[0 0 0]</expression>
+          <isTunable>true</isTunable>
+          <name>CenterOfMass</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e1f02a34-6a13-4b13-bd56-5fbb254f5de8">
+          <expression>m</expression>
+          <name>CenterOfMassUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b7168bfa-c130-4503-aa8f-6c70447e326b">
+          <expression>compiletime</expression>
+          <name>CenterOfMass_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c8726ff8-cbf1-4f33-9e1a-40fe303ca26c">
+          <expression>BrickSolid</expression>
+          <name>ClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f4aeb8a7-adf0-4730-a8a4-5834ac85a13f">
+          <evaluate>true</evaluate>
+          <expression>[0.5 0.5 0.5]</expression>
+          <isTunable>true</isTunable>
+          <name>GraphicDiffuseColor</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="62001e00-854a-4c41-aff8-b38ebeff198e">
+          <expression>compiletime</expression>
+          <name>GraphicDiffuseColor_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d1584b6e-094e-456b-9a7d-b79eb3428f15">
+          <evaluate>true</evaluate>
+          <expression>2710</expression>
+          <isTunable>true</isTunable>
+          <name>Density</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="663c474b-1f34-43d9-b932-13a784c1a869">
+          <expression>kg/m^3</expression>
+          <name>DensityUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0efd1dad-86cb-4dfb-8780-78458990df06">
+          <expression>compiletime</expression>
+          <name>Density_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e02d4600-bb0d-4fcf-bac2-1b5fb60a448e">
+          <expression>on</expression>
+          <name>DoExposeReferenceFrame</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9a5b7ce1-baf7-44c9-81d8-4753fcefd177">
+          <evaluate>true</evaluate>
+          <expression>[0.0 0.0 0.0 1.0]</expression>
+          <isTunable>true</isTunable>
+          <name>GraphicEmissiveColor</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f91cd170-3d89-4336-87c1-b333d8464037">
+          <expression>compiletime</expression>
+          <name>GraphicEmissiveColor_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="22716efa-5ec3-4e8c-9dbe-0cb26de393c6">
+          <expression>off</expression>
+          <name>ExportEntireGeometry</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e326f1d5-0220-4985-bee9-989e9afe2792">
+          <expression>&lt;Frames&gt;&lt;Frame&gt;&lt;Id&gt;Frame1&lt;/Id&gt;&lt;Value&gt;&lt;Name&gt;F1&lt;/Name&gt;&lt;Origin&gt;&lt;Source&gt;CenterOfMassFrame&lt;/Source&gt;&lt;FeatureName&gt;&lt;/FeatureName&gt;&lt;/Origin&gt;&lt;PrimaryAxis&gt;&lt;DefinedDirection&gt;+Z&lt;/DefinedDirection&gt;&lt;Source&gt;ReferenceFrame&lt;/Source&gt;&lt;SourceDirection&gt;+Z&lt;/SourceDirection&gt;&lt;FeatureName&gt;&lt;/FeatureName&gt;&lt;/PrimaryAxis&gt;&lt;SecondaryAxis&gt;&lt;DefinedDirection&gt;+X&lt;/DefinedDirection&gt;&lt;Source&gt;ReferenceFrame&lt;/Source&gt;&lt;SourceDirection&gt;+X&lt;/SourceDirection&gt;&lt;FeatureName&gt;&lt;/FeatureName&gt;&lt;/SecondaryAxis&gt;&lt;/Value&gt;&lt;/Frame&gt;&lt;/Frames&gt;</expression>
+          <name>SerializedFrames</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c3f3bd4e-be1f-4c10-a849-a9c9e4616cb3">
+          <expression>Sphere</expression>
+          <name>MarkerShape</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e4cee941-611f-4756-8280-e40e22d04203">
+          <evaluate>true</evaluate>
+          <expression>10</expression>
+          <isTunable>true</isTunable>
+          <name>MarkerSize</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6bab97c1-1b1b-4060-8123-85a61f6dd42c">
+          <expression>compiletime</expression>
+          <name>MarkerSize_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f85d60fb-647a-4402-82c5-5f1cf5ab71ac">
+          <expression>FromGeometry</expression>
+          <name>GraphicType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d3bb6bca-77a5-471c-b0f8-c3070742cdda">
+          <expression>CalculateFromGeometry</expression>
+          <name>InertiaType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="97c8a3f6-c717-4120-8336-d2c72f1379ca">
+          <evaluate>true</evaluate>
+          <expression>0.1951</expression>
+          <isTunable>true</isTunable>
+          <name>Mass</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ac24b034-aa8f-485c-a04f-59fe0a15559c">
+          <expression>kg</expression>
+          <name>MassUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6e3933d3-729f-430d-a183-4a710d5d8155">
+          <expression>compiletime</expression>
+          <name>Mass_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="dca3c08a-7a5e-492f-896d-3ef22f838951">
+          <evaluate>true</evaluate>
+          <expression>[1 1 1]</expression>
+          <isTunable>true</isTunable>
+          <name>MomentsOfInertia</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="66b14006-11f7-453f-bf3d-1e715dc71181">
+          <expression>kg*m^2</expression>
+          <name>MomentsOfInertiaUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ec471934-61cd-46ac-bd32-bedbc05168d0">
+          <expression>compiletime</expression>
+          <name>MomentsOfInertia_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f8d533f6-bca3-47b8-95e0-f1bbb21034e8">
+          <evaluate>true</evaluate>
+          <expression>1.0</expression>
+          <isTunable>true</isTunable>
+          <name>GraphicOpacity</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a00225e2-42b5-412a-b767-f922a8476a12">
+          <expression>compiletime</expression>
+          <name>GraphicOpacity_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a3f8e63c-f47d-41b0-b7f0-7c0cccb910a0">
+          <evaluate>true</evaluate>
+          <expression>[0 0 0]</expression>
+          <isTunable>true</isTunable>
+          <name>ProductsOfInertia</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2ed2729e-0d9c-443e-8752-5de16529756a">
+          <expression>kg*m^2</expression>
+          <name>ProductsOfInertiaUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="002b3903-3047-4387-94c3-971e547cc330">
+          <expression>compiletime</expression>
+          <name>ProductsOfInertia_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="dbd62f76-98f3-45e5-acbf-92837c2e963e">
+          <evaluate>true</evaluate>
+          <expression>75</expression>
+          <isTunable>true</isTunable>
+          <name>GraphicShininess</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f7495663-56a9-483f-bbef-52fb8cf97240">
+          <expression>compiletime</expression>
+          <name>GraphicShininess_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2a96258a-e2d1-4035-bd9c-94d06f204396">
+          <evaluate>true</evaluate>
+          <expression>[0.5 0.5 0.5 1.0]</expression>
+          <isTunable>true</isTunable>
+          <name>GraphicSpecularColor</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b28dac04-56e7-432d-a5f2-5fd0d643aef5">
+          <expression>compiletime</expression>
+          <name>GraphicSpecularColor_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4fa624da-d56e-43fe-9f6f-870311eed309">
+          <expression>SimpleVisualProperties</expression>
+          <name>GraphicVisPropType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5944be9d-f544-47de-9521-a4759445d9b6">
+          <expression>simmechanics.library.body_elements.brick_solid</expression>
+          <name>BlockFunction</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="eba00c50-db4d-4a05-9288-fe9e97591480">
+      <blockPath>untitled/Solver Configuration1</blockPath>
+      <childrenIds>untitled:22:16</childrenIds>
+      <id>untitled:22</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="13aee8d9-f1e2-4b27-899e-f2aa1c0332bb">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ee000ef6-27c1-4bad-ba12-9ed0a459334e">
+          <expression>network_engine_domain</expression>
+          <name>PhysicalDomain</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="cf729de5-5176-4610-b608-da5e1e08a39a">
+          <expression>solver</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e29cd3c1-55d0-476c-a502-1b78147d115f">
+          <expression>input</expression>
+          <name>LeftPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="de68cbfb-2a2b-402f-8557-e182143a85c4">
+          <expression>generic</expression>
+          <name>RightPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a38812dc-f78d-4b1b-b3b2-aef30594ed47">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>Tones</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7d9eaaee-4d7e-4d61-a909-fe14e5da253e">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>Harmonics</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="56ab4c4a-f49f-4ade-a3bb-070eed464d34">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>SimulateNoise</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c0700b19-f6bb-4552-9e41-3df1778aebd7">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>Profile</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e35b673e-82e9-4c60-814e-ca815e289021">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>UseLocalSampling</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1ba2fb11-a9f1-44cb-993d-cf7860d9757b">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>EnableSwitchedLinearOptims</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e62f86db-775d-4f52-9917-17c53486185a">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>FrequencyDomain</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="cf97cc3f-b255-4a74-a9e2-4a58aeec793c">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>UseCCode</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="29329bf4-2dcc-4247-9ce5-a4c2968f0a16">
+          <evaluate>true</evaluate>
+          <expression>0.001</expression>
+          <name>RelTol</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a60485ad-0d14-4d13-a423-6a97d7429cee">
+          <evaluate>true</evaluate>
+          <expression>1e-06</expression>
+          <name>AbsTol</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6acf11ae-ea31-4479-9b60-7ab75a013967">
+          <evaluate>true</evaluate>
+          <expression>1e-09</expression>
+          <name>MinStep</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b7cb7766-1df2-41b5-a35d-00388260dd33">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>ToWorkspace</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="305d070a-6b35-4679-b4df-5e1cc1c6aab7">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>RevertToSquareIcSolve</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f2c5b363-517b-4b84-9f64-dcdd51fe98b6">
+          <evaluate>true</evaluate>
+          <expression>100</expression>
+          <name>NumHomotopyIterations</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="eb41f09d-daf1-4ef2-a2bf-33b5a2b7434a">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>PhasorMode</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0c6f8cdc-bfb6-462b-99c6-6e62503ffa66">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>PhasorModeNumHarmonics</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8a855c71-76cb-4fce-9350-5a1261e3f944">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>DoDC</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="cc0179e8-eb24-4c07-bec7-e0262946f598">
+          <evaluate>true</evaluate>
+          <expression>1e-09</expression>
+          <name>ResidualTolerance</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3b9c0bef-1e74-45ee-9114-1520edcc3190">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>UseLocalSolver</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5b470e2d-f18d-42bc-8fb7-2bde31d321ef">
+          <expression>NE_BACKWARD_EULER_ADVANCER</expression>
+          <name>LocalSolverChoice</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="058ae78d-1a48-4602-9acd-e68193baefe9">
+          <evaluate>true</evaluate>
+          <expression>0.001</expression>
+          <name>LocalSolverSampleTime</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a5f0ce16-299e-4e15-981d-62dd234a9974">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>DoFixedCost</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c6136cff-bcb8-402f-a76a-2da273e7e569">
+          <evaluate>true</evaluate>
+          <expression>3</expression>
+          <name>MaxNonlinIter</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8f16c7fa-a154-40ed-8950-5248a9526fb6">
+          <evaluate>true</evaluate>
+          <expression>2</expression>
+          <name>MaxModeIter</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="23ab8583-b994-4765-864e-564651989c38">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>ComputeImpulses</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="49f532f6-cba6-4fd0-9aa3-7c309f5ee478">
+          <evaluate>true</evaluate>
+          <expression>2</expression>
+          <name>ImpulseIterations</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5a71ec48-7184-4b65-95ae-9a138a1952ac">
+          <expression>auto</expression>
+          <name>LinearAlgebra</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6da2ef5c-dd34-4b36-9db4-e380d6751bf2">
+          <expression>NE_TIME_EF</expression>
+          <name>EquationFormulation</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="0a76acf1-2df3-4ceb-89a2-4b81cbc35155">
+          <evaluate>true</evaluate>
+          <expression>1024</expression>
+          <name>DelaysMemoryBudget</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="be6e850a-13d7-49e4-998f-b2b41e35f9b1">
+          <evaluate>true</evaluate>
+          <expression>1</expression>
+          <name>AutomaticFiltering</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c0190018-4ce8-4071-866c-a46fe85350e6">
+          <evaluate>true</evaluate>
+          <expression>0.001</expression>
+          <name>FilteringTimeConstant</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="84c497f3-5f6a-40cc-b85f-ac7d59057b7d">
+          <expression>AS_NEEDED</expression>
+          <name>PartitionStorageMethod</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="26ee08c1-1b64-437c-816f-acb6f16c9faa">
+          <evaluate>true</evaluate>
+          <expression>1024</expression>
+          <name>PartitionMemoryBudget</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="10d068c8-9023-46d5-9ad6-4f987913cb51">
+          <expression>ROBUST</expression>
+          <name>PartitionMethod</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="0f037453-4d7a-464f-83fb-b1d0ef517613">
+      <blockPath>untitled/Solver Configuration1/EVAL_KEY</blockPath>
+      <id>untitled:22:16</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="fda072c2-0b8c-4cb5-ab63-60c0076bbe93">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a7d600f9-b70e-4ba1-be1e-a519cbea265f">
+          <expression>eval_key</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>untitled:22</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="320b84ed-2d01-4b9b-a655-2b4353445474">
+      <blockPath>untitled/Mechanism Configuration1</blockPath>
+      <id>untitled:23</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="1412eb74-4318-4a7b-a3e6-8682661c92bc">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c82e21ed-4bce-432d-b5b5-08e72c4502b3">
+          <expression>MechanismConfiguration</expression>
+          <name>ClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5dcc7ca1-b332-4762-83c1-bca886c73ea0">
+          <expression>Constant</expression>
+          <name>UniformGravity</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="afd62dda-4b48-45ff-b4e3-7ea936cd0976">
+          <evaluate>true</evaluate>
+          <expression>[0 -9.80665 0]</expression>
+          <isTunable>true</isTunable>
+          <name>GravityVector</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c7d65eb2-a56e-4cd6-9086-bcfa366cc8ed">
+          <expression>m/s^2</expression>
+          <name>GravityVectorUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3fc9c8dc-904e-45a9-a990-27041f7506b7">
+          <expression>compiletime</expression>
+          <name>GravityVector_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a60076c0-e733-404f-b9b3-a36825d10160">
+          <expression>m/s^2</expression>
+          <name>GravityUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ab7ec991-fc49-4024-af76-a2ef6136e415">
+          <evaluate>true</evaluate>
+          <expression>0.001</expression>
+          <name>LinearizationDelta</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d8332cea-1ac5-4125-a259-8e7fd254286d">
+          <evaluate>true</evaluate>
+          <expression>2</expression>
+          <name>JointModeTransitionNonlinearIterations</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5dad3b54-19c7-45b4-a8f7-a597adbe0716">
+          <expression>simmechanics.library.utilities.mechanism_configuration</expression>
+          <name>BlockFunction</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="860c3af1-5e75-4dcd-83c1-caf2b07952a3">
+      <blockPath>untitled/Simulink-PS Converter1</blockPath>
+      <childrenIds>untitled:26:2</childrenIds>
+      <id>untitled:26</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="fc517ab0-d5d5-4dfb-8880-62634e27e404">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="760f3d02-0942-48f7-a26a-a6e14bd44694">
+          <expression>network_engine_domain</expression>
+          <name>PhysicalDomain</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f1de93ee-4062-4275-a26c-f8eb00c62a3a">
+          <expression>ps_input</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="67ce4c57-f1db-4237-9e91-ef82d2f50ab9">
+          <expression>input</expression>
+          <name>LeftPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9872f84c-f637-4c1d-a1f6-48f804981606">
+          <expression>output</expression>
+          <name>RightPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="13d050dd-3f8b-4a24-9680-ea85bf1fdd88">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>PseudoPeriodic</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4810e3a4-9900-4180-b5cd-b44345ddd507">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>Frequencies</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="493b049f-c1bd-477b-8611-c6ab4af80e1d">
+          <expression>none</expression>
+          <name>NoiseDistribution</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4d2c939b-19a7-4eff-9f28-ce94bb0e6721">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>NoiseParameters</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d1848ee8-d57a-4cd9-b099-1b3a08b9d496">
+          <expression>N</expression>
+          <name>Unit</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1e48ddb5-f2f3-4428-846d-350593ddf042">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>AffineConversion</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="19b57e77-5de5-42c0-a5f2-d7ac506111fb">
+          <expression>provide</expression>
+          <name>FilteringAndDerivatives</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="878a0a7e-630f-4071-8869-488a3326121e">
+          <expression>1</expression>
+          <name>SimscapeFilterOrder</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="510be704-2d47-46cc-bc56-3b34a24f6edb">
+          <evaluate>true</evaluate>
+          <expression>0.001</expression>
+          <name>InputFilterTimeConstant</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="94349918-b4f6-4880-8ae3-d808d95bab5c">
+          <expression>0</expression>
+          <name>UdotUserProvided</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="89dc6c6e-1fc8-4478-ba66-bc487bbfa6a6">
+      <blockPath>untitled/Simulink-PS Converter1/EVAL_KEY</blockPath>
+      <id>untitled:26:2</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="6051f539-f743-43d6-b929-c0921ac239ed">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9b7cdda1-8d03-4b2b-b22f-6a3cc02978c1">
+          <expression>eval_key</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>untitled:26</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="f6136a5d-a834-4594-9d76-b18d13aabf3d">
+      <blockPath>untitled/Rigid Transform1</blockPath>
+      <id>untitled:27</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="6f6b68d9-f53a-46d1-99fc-797f56bcf844">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="13c51c4b-9486-43e6-bbde-1d4c7dee42dd">
+          <expression>RigidTransform</expression>
+          <name>ClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ede8b7ef-c2a1-425b-8879-673f7ad1dcb3">
+          <expression>Cartesian</expression>
+          <name>TranslationMethod</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d9b079fc-d94f-4fa3-924d-47543f72689c">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>TranslationStandardOffset</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1d5b73f9-3e7e-4da3-89cc-f866c4d0af26">
+          <expression>cm</expression>
+          <name>TranslationLengthUnit</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="de4c2bd9-329e-4d2c-bde5-cc6c471ee0c0">
+          <expression>compiletime</expression>
+          <name>TranslationStandardOffset_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="401c0280-cd4a-4e2c-800f-3191b8b2da40">
+          <expression>+Z</expression>
+          <name>TranslationStandardAxis</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="07aac0c6-4bc9-4d15-810c-3c94574a1900">
+          <evaluate>true</evaluate>
+          <expression>[3 6 0]</expression>
+          <isTunable>true</isTunable>
+          <name>TranslationCartesianOffset</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="256cd55a-087c-435a-9e2b-621752934309">
+          <expression>compiletime</expression>
+          <name>TranslationCartesianOffset_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="add2a0ce-2e7c-4f23-8171-01a34c272d1f">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>TranslationROffset</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="66d3d17b-79d2-44bb-996d-97be195777e0">
+          <expression>m</expression>
+          <name>TranslationROffsetUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5d0b62b3-d27a-4b0c-992f-6517faf206c0">
+          <expression>compiletime</expression>
+          <name>TranslationROffset_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9b5716f5-5574-4ce9-b6c0-4c483401da1f">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>TranslationZOffset</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4d27535f-3686-4a5b-af42-33c3c18bae99">
+          <expression>m</expression>
+          <name>TranslationZOffsetUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b7338523-e8e9-45ee-b33f-9610178cf906">
+          <expression>compiletime</expression>
+          <name>TranslationZOffset_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="bd50f14f-9e64-47b0-85d1-e20b5dc4fa85">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <isTunable>true</isTunable>
+          <name>TranslationThetaOffset</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="149ca946-6903-4835-8526-6cd1b27e3e0c">
+          <expression>deg</expression>
+          <name>TranslationThetaOffsetUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="86e6f81f-8ce4-49de-975c-7d13b79331c5">
+          <expression>compiletime</expression>
+          <name>TranslationThetaOffset_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4269070e-13f2-4bfd-9d05-d01f41024173">
+          <expression>StandardAxis</expression>
+          <name>RotationMethod</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b6420257-441f-4e91-81e2-9d4e6ad4363e">
+          <expression>deg</expression>
+          <name>RotationAngleUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a54844f1-03cb-4bd3-9c14-348add33f42e">
+          <expression>+Z</expression>
+          <name>RotationStandardAxis</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c96157a3-a5a0-43d6-833e-24e2439b520b">
+          <evaluate>true</evaluate>
+          <expression>0.0</expression>
+          <isTunable>true</isTunable>
+          <name>RotationAngle</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="06847f2f-b87e-43c7-af77-7072cd054260">
+          <expression>compiletime</expression>
+          <name>RotationAngle_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="05c508d6-dff5-419c-bcf9-1842dc7a696f">
+          <evaluate>true</evaluate>
+          <expression>[0 0 1]</expression>
+          <isTunable>true</isTunable>
+          <name>RotationArbitraryAxis</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="dd2033ab-94b8-40cb-992a-b8bb91e55909">
+          <expression>compiletime</expression>
+          <name>RotationArbitraryAxis_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="867a460f-2bb6-4616-a5ac-7ae2c7368883">
+          <expression>+X</expression>
+          <name>FollAlignAxisA</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="dcf9f250-8bbe-496d-a398-fd1830efec6b">
+          <expression>+Y</expression>
+          <name>BaseAlignAxisA</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a95ceebb-3b2c-4d81-84e3-1f00e0d8eb13">
+          <expression>+Y</expression>
+          <name>FollAlignAxisB</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2f8bf4f5-3987-4f4d-bfd2-43a63ecf00bb">
+          <expression>+Z</expression>
+          <name>BaseAlignAxisB</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3a93cc0d-0820-4b59-844d-c01db3294054">
+          <expression>FollowerAxes</expression>
+          <name>RotationSequenceAxes</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7a82ed00-ac57-4780-8f40-72ec564b5b54">
+          <expression>XYX</expression>
+          <name>RotationSequence</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a8563c89-fe04-4ce2-8fc2-488b4c822988">
+          <evaluate>true</evaluate>
+          <expression>[0 0 0]</expression>
+          <isTunable>true</isTunable>
+          <name>RotationSequenceAngles</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b1d056da-487d-490f-8e0b-44658098db39">
+          <expression>deg</expression>
+          <name>RotationSequenceAnglesUnits</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="137087d1-b608-46e8-88f9-780691a96b4e">
+          <expression>compiletime</expression>
+          <name>RotationSequenceAngles_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6c6c8665-ef11-4440-b269-38b989a60bb5">
+          <evaluate>true</evaluate>
+          <expression>[1 0 0; 0 1 0; 0 0 1]</expression>
+          <isTunable>true</isTunable>
+          <name>RotationMatrix</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="6233734b-a3d1-4f47-98a9-468ef142b5cd">
+          <expression>compiletime</expression>
+          <name>RotationMatrix_conf</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7c34a6b1-5cab-4300-8696-bdd95599ca6f">
+          <expression>simmechanics.library.frames_transforms.rigid_transform</expression>
+          <name>BlockFunction</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="eb3ab57a-a5ff-43ae-bc0c-c81812eb9c10">
+      <blockPath>untitled/Transform Sensor</blockPath>
+      <id>untitled:29</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="c7822822-e413-4c17-a585-273424df4676">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="097e385c-e1b7-416c-a506-4645c7f0c0d0">
+          <expression>TransformSensor</expression>
+          <name>ClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c257a5f7-3fb4-4770-abf4-8e4cbb1576c4">
+          <expression>Base</expression>
+          <name>MeasurementFrame</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f849ce55-2896-42df-acf8-2c01320ec508">
+          <expression>off</expression>
+          <name>SenseAngle</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f4920324-3399-4c66-9f47-215a38475b03">
+          <expression>off</expression>
+          <name>SenseAxis</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8df23979-28f0-443d-a92c-73c59351ead3">
+          <expression>off</expression>
+          <name>SenseAngle1</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a02ce20b-d139-4cbc-aad6-3f94f93027ee">
+          <expression>off</expression>
+          <name>SenseAngle2</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f9b7aca8-dc79-49d1-ad80-56bc97d3d80a">
+          <expression>off</expression>
+          <name>SenseAngle3</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f078a00d-4558-402c-88f3-029e5081cf8f">
+          <expression>off</expression>
+          <name>SenseQ</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b5fe37ae-ea19-4b2f-b590-70215fb38b8c">
+          <expression>off</expression>
+          <name>SenseR</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c587eb8a-50ed-4f66-8d92-69a78abc5220">
+          <expression>off</expression>
+          <name>SenseOmegaX</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="345803f8-a2e9-4bc6-84e5-f24e0c04fec4">
+          <expression>off</expression>
+          <name>SenseOmegaY</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8c92b8da-245c-45a4-8045-1ed6c14348df">
+          <expression>off</expression>
+          <name>SenseOmegaZ</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="48af2592-bf41-4a58-9846-c652cdfbf051">
+          <expression>off</expression>
+          <name>SenseOmega1</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7fb048ff-dd13-4cf9-bf5f-cffc3929a8c2">
+          <expression>off</expression>
+          <name>SenseOmega2</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="29b815a0-6768-4c1b-b859-9c00c15f05e1">
+          <expression>off</expression>
+          <name>SenseOmega3</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c8722022-6419-465c-88db-9eefa46ffa03">
+          <expression>off</expression>
+          <name>SenseQDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3941f8b4-2ccb-4218-9de1-01dc0d85a0cc">
+          <expression>off</expression>
+          <name>SenseRDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b629465f-b054-4c3b-a347-d18dfd64196f">
+          <expression>off</expression>
+          <name>SenseAlphaX</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ccee46a6-7a78-42b2-ae9e-5f3dfe62329b">
+          <expression>off</expression>
+          <name>SenseAlphaY</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="ccb49ee5-4aae-493e-8fe7-c5164d614a83">
+          <expression>off</expression>
+          <name>SenseAlphaZ</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="05f5920d-9a6d-4344-8fce-c24f4de5b55f">
+          <expression>off</expression>
+          <name>SenseAlpha1</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d4127db8-da59-4194-9e02-af62ad2afc2a">
+          <expression>off</expression>
+          <name>SenseAlpha2</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1ad9c237-d218-41fd-9ac7-b5051bc64eb5">
+          <expression>off</expression>
+          <name>SenseAlpha3</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="1f5816df-ef29-4ff1-8bf2-573a965180b7">
+          <expression>off</expression>
+          <name>SenseQDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="29ec7023-20a5-4505-ad0d-3a735a6d0fc9">
+          <expression>off</expression>
+          <name>SenseRDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="a5abb8fa-4e5b-442b-b741-74071121ca96">
+          <expression>off</expression>
+          <name>SenseX</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d189f486-0a57-43d4-ad0d-c791d506a88b">
+          <expression>on</expression>
+          <name>SenseY</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="daedaa85-710e-4086-a5e7-ff50cb21c19c">
+          <expression>off</expression>
+          <name>SenseZ</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="becf6aad-e99c-4840-8bb4-8b81c1732235">
+          <expression>off</expression>
+          <name>SenseRad</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="cf896144-5907-46d9-afcc-01b6e0c8d6c6">
+          <expression>off</expression>
+          <name>SenseAzim</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="03845495-7ee0-4d63-96f3-cf10146bf53a">
+          <expression>off</expression>
+          <name>SenseDist</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="10f785f1-f653-481e-8ef5-1c4b8427f17a">
+          <expression>off</expression>
+          <name>SenseInc</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="04a8ebda-e3c2-4bc0-b9e3-986a2c28862b">
+          <expression>off</expression>
+          <name>SenseXDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="15e5ea7f-5f1b-4f61-90fd-76fbfb92c6e9">
+          <expression>off</expression>
+          <name>SenseYDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="70557b38-2cfe-4b15-88d0-d5b37cbc48dc">
+          <expression>off</expression>
+          <name>SenseZDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7b39b2c5-add4-4c0f-9cf1-b29293b01385">
+          <expression>off</expression>
+          <name>SenseRadDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b3765ae4-03b5-45bf-bed6-0686fe70d309">
+          <expression>off</expression>
+          <name>SenseAzimDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9960ea9c-31f2-482d-a261-a73f47530f72">
+          <expression>off</expression>
+          <name>SenseDistDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b8c3c0f2-5e61-44bb-8ca8-a45fe779abe1">
+          <expression>off</expression>
+          <name>SenseIncDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="37733aec-eb52-4894-a557-18d3f7490df6">
+          <expression>off</expression>
+          <name>SenseXDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9ab582e4-3c6b-47a1-9a44-f7b0705753b9">
+          <expression>off</expression>
+          <name>SenseYDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="63b8e42f-7586-427f-92ee-6f09bec10897">
+          <expression>off</expression>
+          <name>SenseZDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="eb8df7be-d527-424a-b855-46a1940ecfbb">
+          <expression>off</expression>
+          <name>SenseRadDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2200d3eb-789b-41cf-bd14-72cff6fb53b0">
+          <expression>off</expression>
+          <name>SenseAzimDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="58a4e0bb-565d-44bf-9cee-044a1c00a449">
+          <expression>off</expression>
+          <name>SenseDistDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="17144727-218f-436c-be64-739caedc6bd8">
+          <expression>off</expression>
+          <name>SenseIncDDot</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3aea12f4-a30d-41e3-91bd-5919de32af58">
+          <expression>simmechanics.library.frames_transforms.transform_sensor</expression>
+          <name>BlockFunction</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="32172d25-f2fa-40ce-9e8b-4f7150bc6bb4">
+      <blockPath>untitled/PS-Simulink Converter</blockPath>
+      <childrenIds>untitled:31:11</childrenIds>
+      <id>untitled:31</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="c03b92aa-da38-4b80-9fa2-1537beaa4bc1">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f97e4fe1-ec92-483b-8e7b-92516e18783f">
+          <expression>network_engine_domain</expression>
+          <name>PhysicalDomain</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e468fe60-d7fd-4d3c-ba75-3f44e3b16a9d">
+          <expression>ps_output</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="bf0b1398-f399-4fee-8198-c59bf6a7bca6">
+          <expression>input</expression>
+          <name>LeftPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="eac6865b-3775-4ce8-8f6e-722b3ea1f819">
+          <expression>output</expression>
+          <name>RightPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="49e031fe-4eb4-4005-a692-34dcc8a8ca6a">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>PseudoPeriodic</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="fcd76de1-8ede-4e8c-84d1-572b96cd160b">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>Frequencies</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="73ff2727-e675-4783-a3c6-b5cbc7a2cb50">
+          <expression>inherit</expression>
+          <name>Unit</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3701d0f6-7df3-4044-9ad0-dac56c24b787">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>AffineConversion</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="ca9dee24-688d-40c2-a04f-3199da67d24c">
+      <blockPath>untitled/PS-Simulink Converter/EVAL_KEY</blockPath>
+      <id>untitled:31:11</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="a16ee057-4154-4a36-9a3e-92ad1ee1b6c2">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b6457339-3bf3-44c0-b98d-19f3222f5df5">
+          <expression>eval_key</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>untitled:31</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="f05cf542-fb7c-4677-acc9-72c00ff6ef1b">
+      <blockPath>untitled/PS-Simulink Converter1</blockPath>
+      <childrenIds>untitled:35:11</childrenIds>
+      <id>untitled:35</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="5a408499-04a8-47c4-96fb-8f0505f2b725">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b49d66f6-d163-4e68-b7bc-d3a0c6676813">
+          <expression>network_engine_domain</expression>
+          <name>PhysicalDomain</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="40010527-60ab-45e6-9a0c-6b736dd183c2">
+          <expression>ps_output</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="9cdf91eb-7e49-46ba-aa17-ddbb637843d5">
+          <expression>input</expression>
+          <name>LeftPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="7951f7c4-e810-4360-932e-c7f2f68a5288">
+          <expression>output</expression>
+          <name>RightPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2d5117e6-fcde-4a02-a713-a6ec330b67eb">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>PseudoPeriodic</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="662cbed0-ffa9-48ca-9d5a-7c087ddb615f">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>Frequencies</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="4bb3f384-87da-498c-a658-d7d7590bb05c">
+          <expression>inherit</expression>
+          <name>Unit</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="74368df9-42cf-401b-bbad-f69828a31443">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>AffineConversion</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="c94b7b67-8649-422c-b6f0-3200a92c6d06">
+      <blockPath>untitled/PS-Simulink Converter1/EVAL_KEY</blockPath>
+      <id>untitled:35:11</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="4328c930-1abf-45fd-b29a-9962870fdac2">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="c3b60feb-5112-429e-af33-db222cb9d08f">
+          <expression>eval_key</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>untitled:35</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="cf528c84-68f9-4b03-827e-58a89dc5b041">
+      <blockPath>untitled/World Frame1</blockPath>
+      <id>untitled:47</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="64cdf952-c35f-4560-addb-33d580787210">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="8ce1bbbf-abf8-4a88-a6b5-91643b59ed73">
+          <expression>WorldFrame</expression>
+          <name>ClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="11b3e6b9-c831-4625-8c8a-98a31d193c4f">
+          <expression>simmechanics.library.frames_transforms.world_frame</expression>
+          <name>BlockFunction</name>
+        </dialogParameters>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="429d8c1b-e655-4b6a-b592-058acdd4a690">
+      <blockPath>untitled/PS-Simulink Converter2</blockPath>
+      <childrenIds>untitled:48:11</childrenIds>
+      <id>untitled:48</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="7b3552ae-e738-485a-9e7b-564cfc7e66fa">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="55389ecc-fec4-4f02-a738-e1734f10f431">
+          <expression>network_engine_domain</expression>
+          <name>PhysicalDomain</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f0e25932-ea81-4cb5-824b-c1965833a2b3">
+          <expression>ps_output</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2086583a-c854-4bfc-82a0-ee7534a39ad9">
+          <expression>input</expression>
+          <name>LeftPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="b4013b72-0ba7-4f92-8952-2e9bf40e8ada">
+          <expression>output</expression>
+          <name>RightPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="5c49463a-20af-4714-9f02-ce8a73859a4f">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>PseudoPeriodic</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="596db212-a9ae-4e3b-97c4-1a0f3b04fa2d">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>Frequencies</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="35c66632-d99a-4d96-9288-7e7130bf6282">
+          <expression>inherit</expression>
+          <name>Unit</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="2e9243fd-ffbb-42c9-b54b-820b55b24f52">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>AffineConversion</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="a7648d34-14d2-43d4-bb82-380ee361065b">
+      <blockPath>untitled/PS-Simulink Converter2/EVAL_KEY</blockPath>
+      <id>untitled:48:11</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="81f25abb-0765-483e-8c2d-42e0565a2572">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="676faa0d-eb72-403f-8921-84125ebe870d">
+          <expression>eval_key</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>untitled:48</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="b6259fe6-b7df-4978-baaa-04b277d2c7b8">
+      <blockPath>untitled/PS-Simulink Converter3</blockPath>
+      <childrenIds>untitled:61:11</childrenIds>
+      <id>untitled:61</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="eb69be4d-9f29-4a2b-b0e6-d308b6aafc89">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="fdab12f2-1f2c-45ec-a002-63843ad3ceac">
+          <expression>network_engine_domain</expression>
+          <name>PhysicalDomain</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="3dd90ccc-9c72-45d5-9d74-d60f7781389e">
+          <expression>ps_output</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="468eccad-6208-4b27-aa5f-47261aec7ff1">
+          <expression>input</expression>
+          <name>LeftPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="85dd2019-6f54-4f0d-bddd-fadf27f6b6e8">
+          <expression>output</expression>
+          <name>RightPortType</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="d23fb4b6-0fd3-4994-b9cc-c9db9cc4f324">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>PseudoPeriodic</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="34648d74-a4ca-454b-87ca-7fc7441a2a8c">
+          <evaluate>true</evaluate>
+          <expression>[]</expression>
+          <name>Frequencies</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="f8a2e607-c08f-47ef-a0d7-5e69efc9569c">
+          <expression>inherit</expression>
+          <name>Unit</name>
+        </dialogParameters>
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="e202f8ac-aded-48b5-93a4-a9d7154e2146">
+          <evaluate>true</evaluate>
+          <expression>0</expression>
+          <name>AffineConversion</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>root</parentId>
+    </maskedBlocks>
+    <maskedBlocks type="slsa.mm.maskTree.MaskedBlock" uuid="7e987e81-2941-4c2a-bab6-ff0f0d2ce44c">
+      <blockPath>untitled/PS-Simulink Converter3/EVAL_KEY</blockPath>
+      <id>untitled:61:11</id>
+      <masks type="slsa.mm.maskTree.Mask" uuid="3e7f7323-671f-4095-99f3-9f226cf1cbfe">
+        <dialogParameters type="slsa.mm.maskTree.DialogParameterInfo" uuid="14633b36-99c8-4071-8b5b-a54e58242a84">
+          <expression>eval_key</expression>
+          <name>SubClassName</name>
+        </dialogParameters>
+        <initializationCode>nesl_maskinitialization(gcbh);</initializationCode>
+        <skipInitializationCode>true</skipInitializationCode>
+      </masks>
+      <parentId>untitled:61</parentId>
+    </maskedBlocks>
+    <flags type="slsa.mm.maskTree.MaskTreeFlags" uuid="aba21172-f680-48bd-b759-d4173c7d723a"/>
+  </slsa.mm.maskTree.MaskTree>
+</MF0>
